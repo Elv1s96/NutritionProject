@@ -45,7 +45,7 @@
                         text: this.message,
                     };
                 axios.post('/echo-chat-send-message',fields).then((response)=> {
-                    this.dataMessages.push(this.message)
+                    this.dataMessages.push('Я: '+this.message)
                     this.message = "";
                 });
             }

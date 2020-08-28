@@ -50,9 +50,10 @@ class ProductController extends Controller
 //            ];
 //            return $response;
         } else {
-            Product::create($params);
-            return redirect()->back()->with('success', 'Продукт добавлен');
+            dd( __METHOD__);
         }
+//        Product::create($params);
+//        return redirect()->back()->with('success', 'Продукт добавлен');
 
 
     }
@@ -98,7 +99,7 @@ class ProductController extends Controller
 //            ];
 //            return $response;
         } else {
-            dd('ТУТ НЕ АЯКС, НАДО ПРОВЕРИТЬ', __METHOD__);
+            dd( __METHOD__);
         }
 
 
